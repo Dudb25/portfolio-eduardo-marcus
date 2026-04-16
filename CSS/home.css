@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    background: #EBFFEC;
+}
+
 header {
-    background: lightblue;
+    background: #053808;
     height: 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,43 +28,45 @@ header > nav {
 
 header > nav  > a {
     text-decoration: none;
-    color: black;
+    color: #EBFFEC;
     /* background: gray; */
     padding: 10px 10px;
     margin-left: 80px;
 }
 
 main {
-    height: 90vh;
+    height: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    background: rgb(69, 99, 23);
+    grid-template-rows: 70px 1fr 1fr;
+    /* background: rgb(69, 99, 23); */
 
 }
 
 main > aside {
-    background: greenyellow;
+    /* background: greenyellow; */
+    height: 100%;
     grid-column: 1;
+    grid-row: 2;
     padding-left: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
     align-self: center;
 }
 
 main > aside > h1 {
-    background: lightgreen;
+    /* background: lightgreen; */
     max-width: 600px;
     font-size: 55px;
 }
 
 main > aside > p {
-    background: lightblue;
+    /* background: lightblue; */
     max-width: 600px;
     font-size: 20px;
 }
 
 main > div.img-edu-container {
     grid-column: 2;
+    grid-row: 1/ -1;
     background: lightcoral;
+    align-self: center;
 }
