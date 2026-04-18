@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+  background: #053808;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+header > nav {
+    grid-column: 2;
+    display: flex;
+    margin-right: 20px;
+}
+
+header > nav > a {
+    margin-left: 80px;
+    text-decoration: none;
+    color: white;
+    background: gray;
+    padding: 10px 10px;
+}
+
+main {
+    background: lightcyan;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+main #title-container {
+    background: red;
+    grid-row: 2;
+}
