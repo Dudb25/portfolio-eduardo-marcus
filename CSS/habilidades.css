@@ -2,14 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
+body {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background: #EBFFEC;
+
+}
+
+
 header {
-  background: #053808;
+  background: #37893B;
   height: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  max-width: 100%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.193);
+
 }
 
 header > nav {
@@ -21,39 +33,62 @@ header > nav {
 
 header > nav > a {
     text-decoration: none;
-    color: white;
-    background: gray;
+    color: #EBFFEC;
+    /* background: gray; */
     padding: 10px 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+}
+
+header > nav > a.disabled:hover {
+    background: #5ea462;
+}
+
+header > nav > a.active {
+    color: #a4eda8;
+    -webkit-text-stroke: 0.5px #7ec481;
+    cursor: default;
 }
 
 main {
   display: grid;
-  grid-template-columns: 2;
   grid-template-columns: 50px 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 50px auto auto;
+  grid-row: 2;
+  row-gap: 20px;
+  align-content: start;
 }
 
-main #h1-container {
+main #title-container {
   grid-column: 2;
-  grid-row: 1;
-  align-self: center;
+  grid-row: 2;
+  align-self: start;
   font-size: 20px;
 }
 
-main #h1-container > h1{
-  font-size: 35px;
-}
-
-main #soft {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-main #soft > h2{
-    font-size: 30px;
+main #title-container > h1{
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 15px;
+  color: #042F05;
 }
 
 main #hard {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 3;
+}
+
+main #soft {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+main > .skill-container {
+  background: lightblue;
+}
+
+footer {
+  grid-row: 3;
 }
