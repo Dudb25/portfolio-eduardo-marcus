@@ -8,6 +8,8 @@
 body {
     height: 100vh;
     background: #EBFFEC;
+    display: grid;
+    grid-template-rows: auto 628px auto;
 }
 
 header {
@@ -17,6 +19,8 @@ header {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   max-width: 100%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.193);
+
 }
 
 header > nav {
@@ -33,22 +37,30 @@ header > nav > a {
     padding: 10px 10px;
     font-weight: 500;
     letter-spacing: 2px;
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+}
+
+header > nav > a.disabled:hover {
+    background: #5ea462;
 }
 
 header > nav > a.active {
     color: #a4eda8;
     -webkit-text-stroke: 0.5px #7ec481;
+    cursor: default;
 }
 
 main {
     /* background: lightcyan; */
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr;
-    grid-template-rows: 70px auto auto;
+    grid-template-rows: 50px auto auto;
+    align-content: start;
+    row-gap: 20px;
 }
 
 main #title-container {
-    /* background: red; */
     grid-row: 2;
     grid-column: 2;
     align-self: start;
@@ -76,6 +88,7 @@ main .form-container > form {
     padding-top: 10px;
     padding-left: 20px;
     border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.193);
 }
 
 main .form-container > form > div {
@@ -94,7 +107,13 @@ main .form-container > form > div > input {
     max-width: 300px;
     height: 30px;
     border-radius: 8px;
+    border: none;
     background: #EBFFEC;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.193);
+}
+
+main .form-container > form > div > input:focus {
+    outline: 2px solid #105511;
 }
 
 main .form-container > form > div > textarea {
@@ -103,6 +122,11 @@ main .form-container > form > div > textarea {
     resize: none;
     border-radius: 8px;
     background: #EBFFEC;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.193);
+}
+
+main .form-container > form > div > textarea:focus {
+    outline: 2px solid #105511;
 }
 
 main .form-container > form > button {
@@ -115,6 +139,7 @@ main .form-container > form > button {
     letter-spacing: 2px;
     color: #042F05;
     background: #EBFFEC;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.193);
     cursor: pointer;
     transition: all .2s ease-out;
 
@@ -123,4 +148,20 @@ main .form-container > form > button {
 main .form-container > form > button:hover {
     background: #042F05;
     color: #EBFFEC;
+}
+
+footer {
+    height: 30px;
+    background: #72df77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #042F05;
 }
