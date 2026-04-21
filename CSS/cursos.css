@@ -78,6 +78,13 @@ main div#cursos-container {
     max-width: 600px;
 }
 
+main div#cursos-container dl {
+    background: red;
+    display: grid;
+    grid-template-rows: repeat(10, auto);
+    row-gap: 5px;
+}
+
 main div#cursos-container dl > dt {
     font-size: 20px;
   font-weight: 500;
@@ -100,12 +107,22 @@ main div#cursos-container dl > dt.active::after {
 main div#cursos-container dl > dd {
 color: #266d29;
   font-weight: 400;
-  /* display: none; */
+  display: none;
+}
+
+main div#cursos-container dl > dd.active {
+    display: block;
 }
 
 main div#simbolos-container {
     grid-row: 3;
     grid-column: 3;
+    max-width: 400px;
+    align-self: start;
+}
+
+main div#simbolos-container img {
+    width: 100%;
 }
 
 footer {
