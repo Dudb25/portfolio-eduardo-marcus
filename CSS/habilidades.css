@@ -26,6 +26,11 @@ header > nav > a {
 
 main {
   display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+  grid-template-rows: 50px auto auto;
+  grid-row: 2;
+  row-gap: 20px;
+  align-content: start;
   grid-template-columns: 2;
   grid-template-columns: 50px 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -51,3 +56,66 @@ main #hard {
   grid-column: 2;
   grid-row: 2;
 }
+
+main > .skill-container {
+  max-width: 600px;
+  /* background: lightblue; */
+}
+
+main > .skill-container h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #042F05;
+}
+
+main > .skill-container > dl {
+  margin-top: 15px;
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  row-gap: 5px;
+}
+
+main > .skill-container > dl > dt {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #042F05;
+  max-width: 200px;
+}
+
+main > .skill-container > dl > dt:after {
+  content: '⬎';
+  margin-left: 5px;
+}
+
+main > .skill-container > dl > dt.active:after {
+  content: '⬏';
+  margin-left: 5px;
+}
+
+main > .skill-container > dl > dd {
+  color: #266d29;
+  font-weight: 400;
+  display: none;
+}
+
+main > .skill-container > dl > dd.active {
+  display: block;
+}
+
+footer {
+    height: 30px;
+    background: #72df77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #042F05;
+}
+
