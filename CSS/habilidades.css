@@ -2,88 +2,64 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-    font-family: "Roboto Condensed", sans-serif;
 }
-
-body {
-  display: grid;
-  grid-template-rows: auto 628px auto;
-  background: #EBFFEC;
-  height: 100vh;
-}
-
 
 header {
-  background: #37893B;
+  background: #053808;
   height: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  max-width: 100%;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.193);
-
 }
 
 header > nav {
-    grid-column: 2;
-    display: flex;
-    column-gap: 80px;
-    margin-right: 20px;
+  grid-column: 2;
+  display: flex;
+  margin-right: 20px;
 }
 
 header > nav > a {
-    text-decoration: none;
-    color: #EBFFEC;
-    /* background: gray; */
-    padding: 10px 10px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    border-radius: 12px;
-    transition: all .2s ease-in-out;
-}
-
-header > nav > a.disabled:hover {
-    background: #5ea462;
-}
-
-header > nav > a.active {
-    color: #a4eda8;
-    -webkit-text-stroke: 0.5px #7ec481;
-    cursor: default;
+  margin-left: 80px;
+  text-decoration: none;
+  color: white;
 }
 
 main {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: 50px 1fr 1fr;
   grid-template-rows: 50px auto auto;
   grid-row: 2;
   row-gap: 20px;
   align-content: start;
+=======
+  grid-template-columns: 2;
+  grid-template-columns: 50px 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+>>>>>>> 4974affdd45424fca3bcd25dab824f1ab0efddf5
 }
 
-main #title-container {
+main #h1-container {
   grid-column: 2;
-  grid-row: 2;
-  align-self: start;
-  font-size: 20px;
-}
-
-main #title-container > h1{
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 15px;
-  color: #042F05;
-}
-
-main #hard {
-  grid-column: 3;
-  grid-row: 3;
+  grid-row: 1;
+  align-self: center;
+  font-size: 25px;
 }
 
 main #soft {
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 3;
+  grid-row: 2;
 }
+
+main #soft > h2{
+    font-size: 30px;
+}
+
+main #hard {
+  grid-column: 2;
+  grid-row: 2;
+}
+<<<<<<< HEAD
 
 main > .skill-container {
   max-width: 600px;
@@ -146,3 +122,5 @@ footer p {
     text-align: center;
     color: #042F05;
 }
+=======
+>>>>>>> 4974affdd45424fca3bcd25dab824f1ab0efddf5
