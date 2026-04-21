@@ -26,17 +26,14 @@ header > nav > a {
 
 main {
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: 50px 1fr 1fr;
   grid-template-rows: 50px auto auto;
   grid-row: 2;
   row-gap: 20px;
   align-content: start;
-=======
   grid-template-columns: 2;
   grid-template-columns: 50px 1fr 1fr;
   grid-template-rows: 1fr 1fr;
->>>>>>> 4974affdd45424fca3bcd25dab824f1ab0efddf5
 }
 
 main #h1-container {
@@ -59,7 +56,6 @@ main #hard {
   grid-column: 2;
   grid-row: 2;
 }
-<<<<<<< HEAD
 
 main > .skill-container {
   max-width: 600px;
@@ -122,5 +118,4 @@ footer p {
     text-align: center;
     color: #042F05;
 }
-=======
->>>>>>> 4974affdd45424fca3bcd25dab824f1ab0efddf5
+
