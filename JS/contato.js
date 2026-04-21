@@ -1,6 +1,6 @@
 
 document.getElementById("form-contato").addEventListener("submit", function(event) {
-    event.preventDefault(); // impede envio automático
+    event.preventDefault();
 
     const nome = document.getElementById("nome").value.trim();
     const email = document.getElementById("email").value.trim();
