@@ -2,47 +2,60 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
     height: 100vh;
     background: #EBFFEC;
+    display: grid;
+    grid-template-rows: auto 628px auto;
 }
 
 header {
-    background: #053808;
-    height: 70px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+  background: #37893B;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 100%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.193);
+
 }
 
 header > nav {
-    display: flex;
     grid-column: 2;
-    /* background: greenyellow; */
-    padding: 10px 5px;
+    display: flex;
+    column-gap: 80px;
     margin-right: 20px;
-
 }
 
-header > nav  > a {
+header > nav > a {
     text-decoration: none;
     color: #EBFFEC;
     /* background: gray; */
     padding: 10px 10px;
-    margin-left: 80px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
 }
 
-header > nav  > a.active {
-    color: #81b583;
+header > nav > a.disabled:hover {
+    background: #5ea462;
+}
+
+header > nav > a.active {
+    color: #a4eda8;
+    -webkit-text-stroke: 0.5px #7ec481;
+    cursor: default;
 }
 
 main {
     height: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px 1fr 1fr;
+    grid-template-rows: 120px 1fr 1fr;
     /* background: rgb(69, 99, 23); */
 
 }
@@ -60,12 +73,16 @@ main > aside > h1 {
     /* background: lightgreen; */
     max-width: 600px;
     font-size: 55px;
+    font-weight: 400;
+    color: #042F05;
 }
 
 main > aside > p {
     /* background: lightblue; */
     max-width: 600px;
     font-size: 20px;
+    font-weight: 300;
+    color: #042F05;
 }
 
 main > div.img-edu-container {
@@ -73,4 +90,20 @@ main > div.img-edu-container {
     grid-row: 1/ -1;
     background: lightcoral;
     align-self: center;
+}
+
+footer {
+    height: 30px;
+    background: #72df77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #042F05;
 }

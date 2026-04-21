@@ -3,33 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/CSS/contatos.css">
     <title>Contato</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html">HOME</a>
-            <a href="sobre.html">SOBRE</a>
-            <a href="habilidades.html">HABILIDADES</a>
-            <a href="cursos.html">CURSOS</a>
-            <a href="contato.html" class="active">CONTATO</a>
+            <a href="index.html" class="disabled">Home</a>
+            <a href="sobre.html" class="disabled">Sobre</a>
+            <a href="habilidades.html" class="disabled">Habilidades</a>
+            <a href="cursos.html" class="disabled">Cursos</a>
+            <a href="contato.html" class="active">Contato</a>
         </nav>
     </header>
-    <div>
-        <h1>CONTATO</h1>
-    </div>
-    <section class="form">
-        <div class="form-container">
+    <main>
+        <div id="title-container">
+            <h1>CONTATO</h1>
+        </div>
+        <section class="form-container">
             <form action="">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome">
-                <label for="email">E-mail:</label>
-                <input type="text" id="email">
-                <label for="mensagem">Mensagem:</label>
-                <input type="" id="mensagem">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="" id="mensagem"></textarea>
+                </div>
                 <button>ENVIAR</button>
             </form>
-        </div>
-    </section>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright© Developed by Marcus Vinícius & José Eduardo, April 2026.</p>
+    </footer>
 </body>
 </html>

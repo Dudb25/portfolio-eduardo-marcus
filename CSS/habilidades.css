@@ -28,7 +28,7 @@ main {
   display: grid;
   grid-template-columns: 2;
   grid-template-columns: 50px 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 main #h1-container {
@@ -40,11 +40,10 @@ main #h1-container {
 
 main #soft {
   grid-column: 3;
-  grid-row: 3;
+  grid-row: 2;
 }
 
 main #soft > h2{
-    grid-row: 3;
     font-size: 30px;
 }
 
