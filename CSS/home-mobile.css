@@ -22,7 +22,7 @@
         /* display: none; */
     }
 
-    header > button {
+    header > #botao-menu {
         display: block;
         align-self: end;
         margin-right: 10px;
