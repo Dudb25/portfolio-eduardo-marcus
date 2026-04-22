@@ -1,5 +1,11 @@
 @media (width <= 768px ) {
 
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 900px 1fr;
+    }
+
     header {
         display: flex;
         flex-direction: column;
@@ -13,9 +19,11 @@
         top: 10px;
         box-shadow: none;
         /* display: none; */
+        grid-row: 1;
+        
     }
 
-    header > button {
+    header > #botao-menu {
         display: block;
         align-self: end;
         margin-right: 10px;
@@ -44,12 +52,46 @@
     }
 
     header > nav > a.active {
-    color: #042F05;
-    -webkit-text-stroke: 0px #7ec481;
-    cursor: default;
-}
+        color: #042F05;
+        -webkit-text-stroke: 0px #7ec481;
+        cursor: default;
+    }
+
+    main {
+        height: 800px;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+
+    }
+
+    main > #title-container {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    main > #hard {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    main > #soft {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    main .skill-container {
+        padding: 0px 10px;
+        width: 500px;
+    }
+
+    main > .skill-container > dl > dd {
+        /* background: gray; */
+    }
 
     footer {
         grid-row: 3;
     }
+
 }

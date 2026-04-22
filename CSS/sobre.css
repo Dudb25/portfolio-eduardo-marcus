@@ -24,6 +24,10 @@ header {
 
 }
 
+header > #botao-menu {
+    display: none;
+}
+
 header > nav {
     grid-column: 2;
     display: flex;
