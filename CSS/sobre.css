@@ -6,10 +6,10 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100%;
     background: #EBFFEC;
     display: grid;
-    grid-template-rows: auto 628px auto;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -53,10 +53,11 @@ header > nav > a.active {
 }
 
 main {
+    min-height: 0;
     display: grid;
     grid-row: 2;
     grid-template-columns: 50px auto;
-    grid-template-rows: 50px auto auto auto auto;
+    grid-auto-rows: auto;
     align-content: start;
     row-gap: 20px;
 }

@@ -9,8 +9,8 @@
         grid-column: 1;
         grid-column: 1;
         justify-self: end;
-        position: absolute;
-        top: 10px;
+        position: static;
+        margin-top: 10px;
         box-shadow: none;
         /* display: none; */
     }
@@ -49,7 +49,10 @@
     cursor: default;
 }
 
-    footer {
-        grid-row: 3;
+    main {
+        min-height: 0;
     }
+
+
+
 }
