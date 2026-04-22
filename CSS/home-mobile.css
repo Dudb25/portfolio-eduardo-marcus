@@ -1,0 +1,79 @@
+@media (width <= 768px ) {
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        position: relative;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: auto;
+        background: transparent;
+        grid-column: 1;
+        grid-column: 1;
+        justify-self: end;
+        position: absolute;
+        top: 10px;
+        box-shadow: none;
+        /* display: none; */
+    }
+
+    header > button {
+        display: block;
+        align-self: end;
+        margin-right: 10px;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        border: none;
+        border-radius: 8px;
+        background: #72df77;
+        color: #042F05;
+        margin-bottom: 10px;
+    }
+
+    header > nav {
+        display: none;
+    }
+
+    header > nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: #72df77;
+        border-radius: 8px;
+    }
+
+    header > nav > a.active {
+    color: #042F05;
+    -webkit-text-stroke: 0px #7ec481;
+    cursor: default;
+}
+
+    main {
+        height: 1000px;
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        background: lightcyan;
+    }
+
+    main > aside {
+        grid-row: 1;
+    }
+
+    main > div.img-edu-container {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    footer {
+        grid-row: 3;
+    }
+}
