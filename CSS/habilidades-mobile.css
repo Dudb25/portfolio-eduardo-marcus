@@ -3,7 +3,7 @@
     body {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 800px auto;
+        grid-template-rows: auto 900px auto;
     }
 
     header {
@@ -15,7 +15,7 @@
         grid-column: 1;
         grid-column: 1;
         justify-self: end;
-        position: absolute;
+        position:static;
         top: 10px;
         box-shadow: none;
         /* display: none; */
@@ -58,12 +58,7 @@
     }
 
     main {
-        height: 800px;
-        grid-row: 2;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50px auto auto auto;
-
+        min-height: 0;
     }
 
     main > #title-container {
@@ -86,12 +81,5 @@
         width: 300px;
     }
 
-    main > .skill-container > dl > dd {
-        /* background: gray; */
-    }
-
-    footer {
-        grid-row: 3;
-    }
 
 }

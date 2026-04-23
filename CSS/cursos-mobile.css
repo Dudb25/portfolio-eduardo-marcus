@@ -48,6 +48,11 @@
     -webkit-text-stroke: 0px #7ec481;
     cursor: default;
 }
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
 
     footer {
         grid-row: 3;
