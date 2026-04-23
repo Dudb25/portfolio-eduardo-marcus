@@ -66,6 +66,11 @@
         background: lightcyan;
     }
 
+    main > .skill-container {
+        width: 400px;
+        background: red;
+    }
+
     main > aside {
         grid-row: 1;
     }
@@ -73,6 +78,8 @@
     main > div.img-edu-container {
         grid-row: 2;
         grid-column: 1;
+        width: 300px;
+        height: 300px;
     }
 
     footer {
