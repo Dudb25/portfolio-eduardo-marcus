@@ -1,6 +1,14 @@
 @media (width <= 768px ) {
 
+     body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 700px 1fr;
+    }
+
     header {
+        grid-column: 1;
+        grid-row: 1;
         display: flex;
         flex-direction: column;
         width: 200px;
@@ -44,12 +52,41 @@
     }
 
     header > nav > a.active {
-    color: #042F05;
-    -webkit-text-stroke: 0px #7ec481;
-    cursor: default;
-}
+        color: #042F05;
+        -webkit-text-stroke: 0px #7ec481;
+        cursor: default;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    main > #title-container {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    main > p#erro {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    main .form-container > form  {
+        padding-right: 20px;
+    }
+
+    main > .form-container {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        width: 300px;
+    }
 
     footer {
         grid-row: 3;
+        height: 60px;
     }
 }
